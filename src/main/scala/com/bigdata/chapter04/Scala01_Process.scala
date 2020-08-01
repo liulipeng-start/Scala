@@ -1,8 +1,11 @@
-package com.cw.chapter04
+package com.bigdata.chapter04
+
+/**
+ * 流程控制
+ */
 
 object Scala01_Process {
   def main(args: Array[String]): Unit = {
-    //流程控制
 
     //  TODO 单分支
     val flg = true
@@ -36,6 +39,6 @@ object Scala01_Process {
       println("atguigu") // 输出内容 atguigu
     } else
       println("x is " + x)
-
   }
+
 }

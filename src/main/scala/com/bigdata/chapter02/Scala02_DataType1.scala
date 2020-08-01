@@ -1,12 +1,17 @@
-package com.cw.chapter02
+package com.bigdata.chapter02
+
+/**
+ * 数据类型
+ */
 
 object Scala02_DataType1 {
+
   def main(args: Array[String]): Unit = {
 
-    val i: Int = 10
-
-    val d = i.toDouble
-
+    var i: Int = 10
+    //类型转换
+    //var d: Double=i
+    var d = i.toDouble
     println(d)
 
     // TODO Unit表示无值，和其他语言中void等同。用作不返回任何结果的方法的结果类型。Unit只有一个实例值，写成()。
@@ -31,4 +36,6 @@ object Scala02_DataType1 {
   def f1(): Nothing = {
     throw new Exception()
   }
+
+
 }

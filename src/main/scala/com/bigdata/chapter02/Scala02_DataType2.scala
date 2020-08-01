@@ -1,6 +1,11 @@
-package com.cw.chapter02
+package com.bigdata.chapter02
+
+/**
+ * 数据类型
+ */
 
 object Scala02_DataType2 {
+
   def main(args: Array[String]): Unit = {
 
     // TODO byte，short，char  他们三者可以计算，在计算时首先转换为int类型。
@@ -18,10 +23,27 @@ object Scala02_DataType2 {
     //var result: Double = c + i + d //ok Float->Double
 
 
-    //var b: Byte = 5 // ok
-    //var s: Short = 3 // ok
+    var b1: Byte = 5 // ok
+    var s1: Short = 3 // ok
     //var t : Short = s + b // error Int->Short
-    //var t2 = s + b   // ok, 使用类型推导
+    var t2 = s + b   // ok, 使用类型推导
+    println(t2)
+
+
+    // TODO 字符串类型
+    var st : String = "123"
+    println(st.toInt)
+
+    // 但不能把"abc"转成数字，会报错 NumberFormatException
+
+
+    var st1: String = "12.5"
+    //"12.5" 如果转成int 也是不可以的 因为Int中没有小数点
+    //println(st1.toInt)
+    println(st1.toDouble) //toDouble是可以的
+
+
+
 
   }
 }
